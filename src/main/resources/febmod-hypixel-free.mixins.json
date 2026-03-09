@@ -3,7 +3,8 @@
 	"package": "com.feb.mod.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+        "WindowTitleMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
