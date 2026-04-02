@@ -32,7 +32,7 @@ jobs:
       - name: Read mod version
         id: mod_version
         run: |
-          version=$(grep '^mod_version=' gradle.properties | cut -d'=' -f2)
+          version=$(grep '^mod_version=' gradle.properties | cut -d'=' -f2 | xargs)
           echo "version=$version" >> "$GITHUB_OUTPUT"
 
       - name: Create GitHub Release
