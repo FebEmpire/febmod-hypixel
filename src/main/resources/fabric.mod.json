@@ -23,12 +23,6 @@
 				"value": "com.feb.mod.Febmodhypixelfree",
 				"adapter": "kotlin"
 			}
-		],
-		"fabric-datagen": [
-			{
-				"value": "com.feb.mod.FebmodhypixelfreeDataGenerator",
-				"adapter": "kotlin"
-			}
 		]
 	},
 	"mixins": [
