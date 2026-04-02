@@ -3,10 +3,13 @@
 	"id": "febmod-hypixel-free",
 	"version": "${version}",
 	"name": "febmod-hypixel-free",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Free version of FebMod for hypixel skyblock with QoL features",
 	"authors": [
-		"Me!"
+      "Februari10"
 	],
+    "contributors": [
+      "I will add future contributors here"
+    ],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
