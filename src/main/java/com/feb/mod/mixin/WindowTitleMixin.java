@@ -12,7 +12,7 @@ public class WindowTitleMixin {
     @Inject(method = "updateTitle", at = @At("RETURN"))
     private void changeWindowTitle(CallbackInfo ci) {
         Minecraft.getInstance().getWindow().setTitle(
-                ModInfo.MOD_NAME + " " + ModInfo.SERVER + " v" + ModInfo.VERSION + "-" + ModInfo.MOD_TYPE
+                ModInfo.MOD_NAME + " " + ModInfo.SERVER + " v" + ModInfo.VERSION + "-" + ModInfo.TYPE
         );
     }
 }

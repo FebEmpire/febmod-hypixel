@@ -9,6 +9,7 @@ import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource
 import net.fabricmc.fabric.api.event.player.AttackBlockCallback
 import net.minecraft.world.level.block.Blocks
 import net.minecraft.world.InteractionResult
+import com.feb.mod.utils.ChatUtils
 
 object AntiCobbleBreaker {
     private var enabled = false
@@ -36,7 +37,7 @@ object AntiCobbleBreaker {
                 .executes {
                     enabled = !enabled
                     val status = if (enabled) "enabled" else "disabled"
-                    client.player?.displayClientMessage(Component.literal("Anti cobble breaker $status"), false)
+                    ChatUtils.modMessage("Anti cobble breaker $status")
                     1
                 }
         )

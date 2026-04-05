@@ -16,7 +16,11 @@ object ChatUtils {
     fun modMessage(message: String) {
         if (Minecraft.getInstance().player == null) return println("failed to send message, null player")
 
-        val finalMessage: Component = FebModPrefix.append(Component.literal(message))
+        val prefix = Component.literal("${ChatFormatting.BLUE}[")
+            .append(buildGradient("FebMod", 2166763, 3215339))
+            .append(Component.literal("${ChatFormatting.BLUE}] "))
+
+        val finalMessage: Component = prefix.append(Component.literal(message))
 
         Minecraft.getInstance().execute {
             Minecraft.getInstance().player!!.displayClientMessage(finalMessage, false)

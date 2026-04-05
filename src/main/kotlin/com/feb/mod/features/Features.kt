@@ -1,8 +1,6 @@
 package com.feb.mod.features
 
-import com.feb.mod.features.*
-
-object features {
+object Features {
 
     fun registerAll () {
         AntiCobbleBreaker.initialize()
