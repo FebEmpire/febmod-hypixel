@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "febmod-hypixel-free",
+	"id": "febmod-hypixel",
 	"version": "${version}",
 	"name": "febmod-hypixel-free",
 	"description": "Free version of FebMod for hypixel skyblock with QoL features",
