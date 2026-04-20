@@ -2,8 +2,8 @@
 	"schemaVersion": 1,
 	"id": "febmod-hypixel",
 	"version": "${version}",
-	"name": "febmod-hypixel-free",
-	"description": "Free version of FebMod for hypixel skyblock with QoL features",
+	"name": "febmod-hypixel",
+	"description": "FebMod is a mod for hypixel skyblock with QoL features",
 	"authors": [
       "Februari10"
 	],
@@ -20,13 +20,13 @@
 	"entrypoints": {
 		"main": [
 			{
-				"value": "com.feb.mod.Febmodhypixelfree",
+				"value": "com.feb.mod.Febmodhypixel",
 				"adapter": "kotlin"
 			}
 		]
 	},
 	"mixins": [
-		"febmod-hypixel-free.mixins.json"
+		"febmod-hypixel.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.18.4",
