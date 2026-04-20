@@ -20,7 +20,7 @@
 	"entrypoints": {
 		"main": [
 			{
-				"value": "com.feb.mod.Febmodhypixelfree",
+				"value": "com.feb.mod.Febmodhypixel",
 				"adapter": "kotlin"
 			}
 		]

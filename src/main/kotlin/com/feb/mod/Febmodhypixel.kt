@@ -6,7 +6,7 @@ import com.feb.mod.features.Features
 import net.fabricmc.api.ModInitializer
 import org.slf4j.LoggerFactory
 
-object Febmodhypixelfree : ModInitializer {
+object Febmodhypixel : ModInitializer {
     private val logger = LoggerFactory.getLogger("febmod-hypixel-free")
 
     override fun onInitialize() {
