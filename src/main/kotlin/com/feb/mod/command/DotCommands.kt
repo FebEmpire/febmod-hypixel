@@ -2,6 +2,7 @@ package com.feb.mod.command
 
 import com.feb.mod.features.AntiCobbleBreaker
 import com.feb.mod.command.HelpCommand
+import com.feb.mod.ui.FebModGui
 import net.fabricmc.fabric.api.client.message.v1.ClientSendMessageEvents
 
 object DotCommands {
@@ -20,6 +21,10 @@ object DotCommands {
         when (args[0].lowercase()) {
             "cobble" -> AntiCobbleBreaker.toggle()
             "help" -> HelpCommand.message()
+            "f" -> {
+                val mc = net.minecraft.client.Minecraft.getInstance()
+                mc.execute { mc.setScreen(FebModGui()) }
+            }
         }
     }
 }
