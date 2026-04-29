@@ -21,7 +21,7 @@ object DotCommands {
         when (args[0].lowercase()) {
             "cobble" -> AntiCobbleBreaker.toggle()
             "help" -> HelpCommand.message()
-            "f" -> {
+            "f", "feb", "febmod" -> {
                 val mc = net.minecraft.client.Minecraft.getInstance()
                 mc.execute { mc.setScreen(FebModGui()) }
             }
